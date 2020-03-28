@@ -20,32 +20,16 @@ def reverse_array(array)
 end
 
 def kesha_maker(array)
-  if block_given?
-    i = 0 
-    while i < array.length 
-      yield 
-      i = i + 1 
-    end 
-    array
-  else
-    "Hey! No block given!" 
+  counter = 0 
+  array2 = [] 
+  string = array.join(",")
+  while counter < array.length 
+    array[counter] string[2] = "$" 
+    array2 << string.split(",")
+    counter = 1 + counter
   end 
+   array2 
 end 
-  
-kesha_maker(i)
-  puts "in the yield"
-end 
-  
-  # counter = 0 
-  # array2 = [] 
-  # string = array.join(",")
-  # while counter  < array.length 
-  #  string[2] = "$" 
-  #  array2 << string.split(",")
-  #  counter = 1 + counter
-  #end 
-  # array2 
-# end 
 
 def find_a(array)
   if block_given?
