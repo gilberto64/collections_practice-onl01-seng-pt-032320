@@ -44,7 +44,7 @@ def find_a(array)
     "Hey! No block given!" 
   end 
   
-  find_a(array)
+  find_a(i)
     #  string = (" ")
     #  array.each do |word| if #{word}.start_with?("a") then string << array[i]
    end
