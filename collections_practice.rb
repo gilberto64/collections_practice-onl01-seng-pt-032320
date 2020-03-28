@@ -32,22 +32,19 @@ def kesha_maker(array)
 end 
 
 def find_a(array)
-  if block_given?
-    i = 0 
-    while i < array.length 
+  i = 0 
+  while i < array.length 
     if array.include?("a") yield
     end 
     i = i + 1 
     end 
   array
-  else
-    "Hey! No block given!" 
-  end 
+end 
   
   find_a(i)
     #  string = (" ")
     #  array.each do |word| if #{word}.start_with?("a") then string << array[i]
-   end
+  end
 
   
   # string << array.start_with?("a")  
