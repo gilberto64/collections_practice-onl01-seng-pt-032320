@@ -35,9 +35,9 @@ def find_a(array)
   if block_given?
     i = 0 
     while i < array.length 
-    if "Sammy".include?("a")
-      yield 
-      i = i + 1 
+    if array.include?("a") yield
+    end 
+    i = i + 1 
     end 
   array
   else
